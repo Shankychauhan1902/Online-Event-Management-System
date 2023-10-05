@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System - Browse Events</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./create-event.html">Create Event</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./login.html">Login</a>
+        <a href="./register.html">Register</a>
+    </nav>
+
+    <section>
+        <h2>Browse Events</h2>
+        <div id="filter-options">
+            <select id="eventTypeFilter">
+                <option value="all">All Types</option>
+                <option value="music">Music</option>
+                <option value="art">Art</option>
+                <option value="workshop">Workshop</option>
+                <option value="conference">Conference</option>
+                <option value="other">Other</option>
+            </select>
+            <button onclick="filterEvents()">Filter</button>
+        </div>
+
+        <div id="events-list">
+            <div class="event">
+                <h3>Music Festival</h3>
+                <p>Date: 23rd November 2023</p>
+                <p>Location: Central Park, Cityname</p>
+                <p>Join us for an amazing night filled with the sounds of top artists from all over the world. Book your tickets now!</p>
+                <a href="./event-detail.html">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Event Management System | Built with ❤️ by [Your Name]</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
